@@ -25,9 +25,9 @@ function include() {
  
 /* @Process */
 function processForm(x,y,z) {
-  var url = "https://docs.google.com/spreadsheets/d/1SuOe8K8LanM6Iar1gPDGiRZN4GZbLe6BCemHwdY6aDo/edit?usp=sharing#gid=0";
+  var url = "Paste URL DISINI#gid=0";
   var ss = SpreadsheetApp.openByUrl(url);
-  var ws = ss.getSheetByName("IP Responder");
+  var ws = ss.getSheetByName("NAMA SHEET");
   var lokasi = Maps.newGeocoder().reverseGeocode(y, z);
   alamat= lokasi.results[0].formatted_address;
   
